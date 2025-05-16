@@ -1,13 +1,13 @@
 import s from './App.module.css';
 import ContactList from '../ConractList/ContactList';
 import ContactForm from '../ContactForm/ContactForm';
-import SearchBar from '../SearchBar/SearchBar';
+import SearchBox from '../SearchBox/SearchBox';
 
 const App = () => {
   return (
     <div className={s.wrapper}>
       <ContactForm />
-      <SearchBar />
+      <SearchBox />
       <ContactList />
     </div>
   );

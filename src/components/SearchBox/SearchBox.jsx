@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import s from './SearchBar.module.css';
+import s from './SearchBox.module.css';
 import { useId } from 'react';
 import { changeFilter } from '../../redux/filtersSlice';
 
@@ -9,7 +9,6 @@ const SearchBar = () => {
 
   const handleChangeQuery = e => {
     const inputValue = e.target.value;
-    console.log(inputValue);
     dispatch(changeFilter(inputValue));
   };
 
